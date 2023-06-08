@@ -1,0 +1,11 @@
+.c_alert{
+	color: red;
+	background-color: #ddd;
+	border: 1px solid black;
+}
+#b_alert{
+	background-color: teal;
+}
+.h_img{
+	height: 500px;
+}

@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap5.3 components</title>
+    <!--css link-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="alert c_alert alert-dismissible fade show" role="alert">
+        <h3 class="alert-heading">Lorem Ipsum</h3>
+        <p class="mb-0">Lorem Ipsum is simply dummy text <a href="#" class="alert-link">offer</a> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since   the 1500s,</p>
+        <button type="button" class="btn-close"data-bs-dismiss="alert" aria-label="close"></button>
+      </div>
+      <div id="l_alert"></div>
+      <button type="button" class="btn" id="b_alert">Show live alert</button>
+    </div>
+    <!--accordion-->
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-6">
+<div class="accordion accordion-flush" id="accf">
+  <!--item 1-->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f_one" aria-expanded="true" aria-controls="f_one">
+        Lorem Ipsum is simply dummy
+      </button>
+    </h2>
+    <div id="f_one" class="accordion-collapse collapse show" data-bs-parent="#accf">
+      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+    </div>
+  </div>
+  <!--item 2-->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f_two" aria-expanded="false" aria-controls="f_two">
+        Lorem Ipsum is simply dummy
+      </button>
+    </h2>
+    <div id="f_two" class="accordion-collapse collapse" data-bs-parent="#accf">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <!--item 3-->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f_three" aria-expanded="false" aria-controls="f_three">
+        Lorem Ipsum is simply dummy
+      </button>
+    </h2>
+    <div id="f_three" class="accordion-collapse collapse" data-bs-parent="#accf">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+      <h1>Example heading <span class="badge bg-dark">New</span></h1>
+    </div>
+    <button type="button" class="btn btn-secondary">Notification <span class="badge bg-dark">3</span></button>
+    <button type="button" class="btn btn-secondary me-3 position-relative">Inbox <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">99+<span class="visually-hidden">unread messages</span></span></button>
+    <button type="button" class="btn btn-primary position-relative">Profile<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"><span class="visually-hidden">New alert</span></span></button>
+    </div>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container">
+      <div>
+        <button type="button" class="btn">Base class</button>
+      </div>
+      <div>
+        <a href="#" class="btn btn-primary" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-outline-dark" type="submit" value="Submit">
+        <input class="btn btn-outline-danger" type="reset" value="Reset">
+      </div>
+      <div class="mt-3">
+        <button type="button" class="btn btn-secondary btn-lg">large button</button>
+        <button type="button" class="btn btn-secondary btn-sm">small button</button>
+        <button type="button" class="btn btn-secondary"  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem">button</button>
+        <button type="button" class="btn btn-primary" disabled>Primary button</button>
+      </div>
+      <div class="d-grid gap-2 my-3">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <div class="d-grid gap-2 col-4 mx-auto my-3">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <div class="d-grid gap-2 d-flex mx-auto my-3 justify-content-end">
+        <button class="btn btn-primary" type="button">Button</button>
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" data-bs-toggole="button">Toggole Button</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggole="button" aria-pressed="true">Active Toggole Button</button>
+        <button type="button" class="btn btn-primary disabled" data-bs-toggole="button">Disabled Toggoled Button</button>
+      </div>
+      <div class="btn-group mt-3" role="group" aria-label="basic example">
+        <button class="btn btn-danger active" type="button">left</button>
+        <button class="btn btn-warning" type="button">middle</button>
+        <button class="btn btn-success" type="button">right</button>
+      </div>
+      <div class="btn-group mt-3" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="b_check1" autocomplete="off">
+        <label for="b_check1" class="btn btn-outline-primary">check 1</label>
+        <input type="checkbox" class="btn-check" id="b_check2" autocomplete="off">
+        <label for="b_check2" class="btn btn-outline-primary">check 2</label>
+        <input type="checkbox" class="btn-check" id="b_check3" autocomplete="off">
+        <label for="b_check3" class="btn btn-outline-primary">check 3</label>
+      </div>
+      <div class="btn-group mt-3" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="b_radio1" autocomplete="off" checked>
+        <label for="b_radio1" class="btn btn-outline-primary">radio 1</label>
+        <input type="radio" class="btn-check" name="btnradio" id="b_radio2" autocomplete="off">
+        <label for="b_radio2" class="btn btn-outline-primary">radio 2</label>
+        <input type="radio" class="btn-check" name="btnradio" id="b_radio3" autocomplete="off">
+        <label for="b_radio3" class="btn btn-outline-primary">radio 3</label>
+      </div>
+      <div class="b_d">
+        <div class="btn-group mt-3" role="group" aria-label="example">
+        <button class="btn btn-primary" type="button">1</button>
+        <button class="btn btn-primary" type="button">2</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+            <li><a class="dropdown-item" href="#">Item 3</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="b_vertical">
+        <div class="btn-group-vertical mt-3" role="group" aria-label="example">
+        <button class="btn btn-primary" type="button">1</button>
+        <button class="btn btn-primary" type="button">2</button>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+            <li><a class="dropdown-item" href="#">Item 3</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-primary" type="button">3</button>
+        <button class="btn btn-primary" type="button">4</button>
+      </div>
+      </div>
+    </div>
+    <!--card start...... -->
+    <div class="container">
+      <div class="card col-4">
+        <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card my-3" style="width: 18rem;">
+        <div class="card-header">Featured</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item">item 3</li>
+        </ul>
+        <div class="card-footer">Last item</div>
+      </div>
+      <div class="card my-3" style="width: 18rem;">
+        <div class="card-header">Quote</div>
+        <div class="card-body">
+          <blockquote class="blockquote">
+            <p>The silent patient</p>
+            <footer class="blockquote-footer">Alex Michaelides</footer>
+          </blockquote>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="t_align">
+        <div class="card text-center my-3" style="width: 20rem;">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+          <div class="card text-end my-3" style="width: 20rem;">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+      </div>
+      <div class="card text-center my-3">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link pt-0 disabled" href="#"></a>Disabled</li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+        <div class="overl">
+          <div class="card text-center" style="width: 25rem;">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-img-overlay">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+          </div>
+        </div>
+        <div class="card my-3">
+          <div class="row g-0">
+            <div class="col-sm-4">
+              <img src="images/blog2.jpg" class="img-fluid" alt="shamim">
+            </div>
+            <div class="col-sm-8 text-bg-secondary">
+              <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-dark">Go somewhere</a>
+        </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer">
+          <small class="">Last updated</small>
+        </div>
+          </div>
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer">
+          <small class="">Last updated</small>
+        </div>
+          </div>
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer">
+          <small class="">Last updated</small>
+        </div>
+          </div>
+          <div class="card">
+            <img src="images/blog2.jpg" class="card-img-top" alt="shamim">
+        <div class="card-body">
+          <h4 class="card-tittle">Lorem Ipsum</h4>
+          <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        <div class="card-footer">
+          <small class="">Last updated</small>
+        </div>
+          </div>
+        </div>
+      <!--js carousel start... -->
+    <div class="container">
+      <div class="col-lg-12">
+        <div id="carousel_1" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img1.jpg" class="d-block width-100 col-lg-12 h_img" alt="shamim">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img2.jpg" class="d-block width-100 col-lg-12 h_img" alt="shamim">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img3.jpg" class="d-block width-100 col-lg-12 h_img" alt="shamim">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel_1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    </div>
+    <!-close button-->
+    <div class="container my-4">
+      <button type="button" class="btn-close me-3" aria-label="close"></button>
+      <button type="button" class="btn-close" aria-label="close" disabled></button>
+      <div data-bs-theme="dark">
+        <button type="button" class="btn-close me-3" aria-label="close"></button>
+      <button type="button" class="btn-close" aria-label="close" disabled></button>
+      </div>
+    </div>
+    <!--collapse--- -->
+    <div class="container">
+      <p>
+        <a class="btn btn-primary" href="#collapse_one" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-control="collapse_one">Link with href</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="false" aria-control="collapse_one">Link with data-bs-target</button>
+      </p>
+      <div class="collapse" id="collapse_one">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </div>
+      </div>
+      <div>
+        <p>
+        <a class="btn btn-primary" href="#collapse_m1" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-control="collapse_one">First element</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse_m2" aria-expanded="false" aria-control="collapse_one">2nd element</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="collapse_m1">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </div>
+      </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="collapse_m2">
+        <div class="card card-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </div>
+      </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--dropdown..... -->
+    <div class="dropdown-center dropend">
+      <a href="#" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Dropdown link</a>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item">item 1</a></li>
+        <li><a href="#" class="dropdown-item">item 2</a></li>
+        <li><a href="#" class="dropdown-item">item 3</a></li>
+      </ul>
+    </div>
+    <div class="btn-group my-3">
+      <button class="btn btn-danger" type="button">Action</button>
+      <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" type="button" data-bs-toggle="dropdown" aria-axpanded="false">
+        <span class="visually-hidden">Toggle dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="dropdown-item active" aria-current="true">item 1</a></li>
+        <li><a href="#" class="dropdown-item">item 2</a></li>
+        <li><a href="#" class="dropdown-item">item 3</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a href="#" class="dropdown-item">seperated item</a></li>
+      </ul>
+    </div>
+    </div>
+    <!--list.......... -->
+    <div class="container">
+      <div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item">item 3</li>
+      </ul>
+      <ol class="list-group list-group-numbered">
+          <li class="list-group-item">item 1</li>
+          <li class="list-group-item">item 2</li>
+          <li class="list-group-item">item 3</li>
+      </ol>
+      </div>
+      <div class="my-3">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Sub heading</div>
+              Content for list item
+            </div>
+            <span class="badge bg-primary rounded-pill">1</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Sub heading</div>
+              Content for list item
+            </div>
+            <span class="badge bg-primary rounded-pill">2</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+
+
+    <!--js link-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
